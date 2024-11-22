@@ -1,6 +1,3 @@
-var a = "10";
-var b = 20.5;
+var nome = prompt("Qual o seu nome?");
 
-var c = parseInt(a) + parseFloat(b);
-
-console.log(c);
+alert("Bom dia, " + nome);
