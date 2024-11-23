@@ -10,6 +10,8 @@ function media(n1,n2){
 }
 
 var resultado1 = media(6,7);
-var resultado2 = media(8,7);
 
-console.log("Primeiro resultado: " + resultado1 + " e Segundo Resultado: " + resultado2)
+var m = media;
+var resultado2 = m(8,7);
+
+console.log("Primeiro resultado: " + resultado1 + "e Segundo Resultado: " + resultado2)
