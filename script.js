@@ -1,11 +1,17 @@
 
-var numero = Math.random() * 100;
 
-while( numero <= 90){
+// var alunos = new Array("Igor","José","Guilherme");
 
-    console.log("Número:" + numero);
-    numero = Math.random() * 100;
+var alunos = ["Igor","José","Guilherme","Mariana","Renato"];
+
+// for(var i = 0; i < alunos.length; i++){
+//     console.log(alunos[i])
+// }
+
+// Usando in, irá pegar o número do Array, e o Of, a informação referente.
+for (var aluno of alunos){
+    console.log(aluno);
 }
 
-console.log("Numero final: " + numero);
-console.log("Acabou!");
+//console.log("Aluno selecionado: " + alunos[0]);
+
