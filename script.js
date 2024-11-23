@@ -1,17 +1,15 @@
 
+function media(n1,n2){
 
-// var alunos = new Array("Igor","José","Guilherme");
+    var nota1 = n1;
+    var nota2 = n2;
+    var media = (nota1 + nota2)/2;
+    // console.log(media);
 
-var alunos = ["Igor","José","Guilherme","Mariana","Renato"];
-
-// for(var i = 0; i < alunos.length; i++){
-//     console.log(alunos[i])
-// }
-
-// Usando in, irá pegar o número do Array, e o Of, a informação referente.
-for (var aluno of alunos){
-    console.log(aluno);
+    return media;
 }
 
-//console.log("Aluno selecionado: " + alunos[0]);
+var resultado1 = media(6,7);
+var resultado2 = media(8,7);
 
+console.log("Primeiro resultado: " + resultado1 + " e Segundo Resultado: " + resultado2)
