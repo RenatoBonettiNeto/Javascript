@@ -1,17 +1,36 @@
 
+var nomes = ["Igor","José","Maria"];
+var notasA = [7.0,6.5,9.5];
+var notasB = [8.0,7.0,8.5];
+
 function media(n1,n2){
-
-    var nota1 = n1;
-    var nota2 = n2;
-    var media = (nota1 + nota2)/2;
-    // console.log(media);
-
-    return media;
+    return (n1 + n2)/2;
 }
 
-var resultado1 = media(6,7);
+function passou(media){
+    
+    if(media > 7){
+        return "Aprovado!";
+    }else {
+        return "Reprovado!";
+    }
 
-var m = media;
-var resultado2 = m(8,7);
+}
 
-console.log("Primeiro resultado: " + resultado1 + "e Segundo Resultado: " + resultado2)
+
+for(var index in nomes){
+
+    var m = media(notasA[index], notasB[index]);
+
+    console.log(nomes[index] +
+                " - " +
+                notasA[index] +
+                " - " +
+                notasB[index] +
+                " - Media: " +
+                m +
+                " - " +
+                passou(m));    
+        
+
+}
