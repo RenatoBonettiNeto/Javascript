@@ -1,9 +1,11 @@
 
-var numero = 5;
+var numero = Math.random() * 100;
 
-for (var i = 0; i < numero; i ++){
+while( numero <= 90){
 
- console.log("Executando o número:", i)
+    console.log("Número:" + numero);
+    numero = Math.random() * 100;
 }
 
- console.log("Comcluido!")
+console.log("Numero final: " + numero);
+console.log("Acabou!");
