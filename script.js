@@ -1,7 +1,16 @@
+onload = function(){
+    let nome = this.localStorage.getItem("nome");
+    let h1 = this.document.getElementById("nome");
+    h1.innerHTML = nome;
+}
 
-var d = new Date("8-28-2003 00:00");
+function atualizar(element){
 
-console.log(d)
-console.log(d.getDate());
-console.log(d.getMonth()) // 0 - 11
-console.log(d.getFullYear());
+    let valor = element.value;
+    console.log(valor)
+
+    let h1 = document.getElementById("nome");
+    h1.innerHTML = valor;
+
+    localStorage.setItem("nome", valor);
+}
