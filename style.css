@@ -1,0 +1,31 @@
+p::first-line{
+    color: red;
+
+}
+
+p::first-letter{
+    color: brown;
+    font-size: 5rem;
+}
+
+
+h1::selection{
+    color: yellow;
+
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../Imagens/code2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
