@@ -1,31 +1,12 @@
-p::first-line{
+input:focus{
     color: red;
+} 
 
+li:first-of-type{
+    color: blue;
 }
 
-p::first-letter{
-    color: brown;
-    font-size: 5rem;
+li:nth-child(2){
+    color: blueviolet;
 }
 
-
-h1::selection{
-    color: yellow;
-
-}
-
-li{
-    list-style: none;
-}
-
-li::before{
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url(../Imagens/code2.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
-}
